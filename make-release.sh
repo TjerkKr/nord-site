@@ -10,7 +10,7 @@
 ## properly configured in this script.
 
 # if version is unset, will use the default experimental version from site.mk
-VERSION=${3:-"2016.2.5"}
+VERSION=${3:-"2016.2.5.1~exp$(date '+%y%m%d%H%M')"}
 # branch must be set to either experimental, beta or stable
 BRANCH=${2:-"stable"}
 # must point to valid ecdsa signing key created by ecdsakeygen, relative to Gluon base directory
@@ -21,8 +21,8 @@ BROKEN=""
 CORES="-j1"
 
 #ONLY_TARGET must be set to "" or i.e. "ar71xx-generic" 
-ONLY_TARGET=""
-#ONLY_TARGET="ar71xx-generic"
+#ONLY_TARGET=""
+ONLY_TARGET="ar71xx-generic"
 
 cd ../
 if [ ! -d "site" ]; then

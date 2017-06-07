@@ -1,15 +1,14 @@
 GLUON_SITE_PACKAGES := \
 	gluon-mesh-batman-adv-15 \
 	gluon-alfred \
-	gluon-autoupdater \
 	gluon-setup-mode \
 	gluon-config-mode-core \
 	gluon-config-mode-autoupdater \
+	gluon-autoupdater \
 	gluon-config-mode-mesh-vpn \
 	gluon-ebtables-filter-multicast \
 	gluon-ebtables-filter-ra-dhcp \
 	gluon-luci-admin \
-	gluon-luci-autoupdater \
 	gluon-luci-portconfig \
 	gluon-luci-private-wifi \
 	gluon-luci-wifi-config \
@@ -20,6 +19,12 @@ GLUON_SITE_PACKAGES := \
 	iwinfo \
 	iptables \
 	haveged
+
+#	gluon-luci-autoupdater
+
+#from ffho
+GLUON_SITE_PACKAGES += \
+        ffho-luci-autoupdater-wifi-fallback
 
 # from eulenfunk:
 GLUON_SITE_PACKAGES += \
